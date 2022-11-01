@@ -15,8 +15,19 @@ body {
 main {
     display: inline-block; /* for image width to be the same width as the screen */
     margin-top: 2%;
+    padding: 15px;
+    position: relative; /* for the elements with position: absolute respect the place inside of main tag */
 }
 
+.pokedex {
+      width: 100%;
+      max-width: 425px;
+}
 
-
-
+.pokemon__image {
+    position: absolute;
+    bottom: 55%;
+    left: 50%;
+    transform: translate(-63%, 20%); /* refers to width of the image */
+    height: 18%;
+}
